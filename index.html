@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="ajax/php/jquery/html geonames searchJSON">
+    <meta name="author" content="Hafizullah Karim">
+    <link rel="stylesheet" href="./libs/css/styles.css">
+    <script type="application/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> GeoNames Address</title>
+  </head>
+  <body>
+    <div id=”preloader”></div>
+
+    <label for="vol">  Place Name:</label>
+    <input type="text"  class="q" id="q" name="vol">
+
+    <label for="lang">languages: </label>
+    <select id="lang" >
+      <option value="en">English</option>
+      <option value="fr">Francais</option>
+      <option value="de">Deutsche</option>
+    </select>
+
+    <button id="btnRun" > find address</button>
+    <div id="results">
+      <p>geonameId: <span id="geonameId"></span><p>
+      <p>Name: <span id="name"></span><p>
+      <p>countryCode: <span id="countryCode"></span><p>
+      <p>Latidue: <span id="lat"></span><p>
+      <p>Longitude: <span id="lng"></span><p>
+      <p>population: <span id="population"></span><p>
+      <p>fcodeName: <span id="fcodeName"></span><p>
+    </div>
+
+      <div id="error"> </div>
+
+
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="libs/js/scripts.js"></script>
+  </body>
+</html>
